@@ -17,19 +17,20 @@ server:
 spring:
   profiles: prod
 
+### 配置数据源
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/love_shopping?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: admin
+
 
 
 ### 配置tomcat端口号
 ##server:
 ##  port: 8080
 ##
-### 配置数据源
-##spring:
-##  datasource:
-##    driverClassName: com.mysql.jdbc.Driver
-##    url: jdbc:mysql://localhost:3306/xxx_db
-##    username: root
-##    password: root
+
 ##
 ### 配置mybatis
 ##mybatis:
