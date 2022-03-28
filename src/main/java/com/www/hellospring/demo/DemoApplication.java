@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication {
 
 	public static void main(String[] args) {
+		// 传入配置文件地址，开始加载配置文件
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		SpringApplication.run(DemoApplication.class, args);
 		String name = "张三";
